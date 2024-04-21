@@ -46,11 +46,12 @@ msgstr "Balanço"
 msgid "Trial Balance"
 msgstr "Balancete"
 
-#. Movimentos or Lançamentos...
+#. Transações and Lançamentos for entries/transactions and postings
+#. In Portugal could be Transacções and Entradas
 #: frontend/src/sidebar/AsideContents.svelte:29
 #: src/fava/templates/journal.html:5
 msgid "Journal"
-msgstr "Movimentos"
+msgstr "Transações"
 
 #: frontend/src/reports/routes.ts:32
 #: frontend/src/sidebar/AsideContents.svelte:30
@@ -60,7 +61,7 @@ msgstr "Consulta"
 #: frontend/src/sidebar/AsideContents.svelte:44
 #: src/fava/templates/holdings.html:5 src/fava/templates/holdings.html:53
 msgid "Holdings"
-msgstr "Património"
+msgstr "Bens"
 
 #: frontend/src/reports/commodities/index.ts:35
 #: frontend/src/sidebar/AsideContents.svelte:45
@@ -160,11 +161,11 @@ msgstr "Outros"
 
 #: src/fava/templates/account.html:30
 msgid "Journal of all entries for this Account and Sub-Accounts"
-msgstr "Todos os movimentos para esta conta e Sub-Contas"
+msgstr "Todos as transações para esta conta e Sub-Contas"
 
 #: frontend/src/reports/accounts/AccountReport.svelte:45
 msgid "Account Journal"
-msgstr "Movimentos de Conta"
+msgstr "Transações de Conta"
 
 #: frontend/src/reports/accounts/AccountReport.svelte:51
 #: frontend/src/reports/accounts/AccountReport.svelte:54
@@ -232,7 +233,7 @@ msgstr "Moeda de custo"
 
 #: src/fava/templates/holdings.html:55
 msgid "Holdings by"
-msgstr "Patrimônio por"
+msgstr "Bens por"
 
 #: frontend/src/stores/accounts.ts:22 src/fava/json_api.py:476
 #: src/fava/json_api.py:496
@@ -323,115 +324,116 @@ msgstr "Número"
 #: frontend/src/entry-forms/Posting.svelte:83
 #: frontend/src/entry-forms/Transaction.svelte:126
 msgid "Add posting"
-msgstr "Inserir movimento"
+msgstr "Inserir lançamento"
 
 #: frontend/src/reports/import/Extract.svelte:43
 #: frontend/src/reports/import/index.ts:67
 msgid "Import"
-msgstr ""
+msgstr "Importar"
 
 #: frontend/src/journal/JournalFilters.svelte:41
 msgid "Budget entries"
-msgstr ""
+msgstr "Transações de orçamento"
 
 #: fava/templates/extract.html:9
 msgid "Toggle source"
-msgstr ""
+msgstr "Alternar fonte"
 
 #: fava/templates/extract.html:10
 msgid "Toggle ignore"
-msgstr ""
+msgstr "Alternar ignorar"
 
 #: frontend/src/reports/import/Extract.svelte:99
 msgid "Source"
-msgstr ""
+msgstr "Fonte"
 
 #: fava/templates/extract.html:16
 msgid "Entry"
-msgstr ""
+msgstr "Transação"
 
 #: fava/templates/extract.html:17
 msgid "Actions"
-msgstr ""
+msgstr "Ações"
 
 #: fava/templates/extract.html:32
 msgid "Ignore"
-msgstr ""
+msgstr "Ignorar"
 
 #: fava/templates/extract.html:33
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplicar"
 
 #: fava/templates/import.html:14
 msgid "Importer"
-msgstr ""
+msgstr "Importador"
 
 #: frontend/src/reports/import/FileList.svelte:53
 msgid "Extract"
-msgstr ""
+msgstr "Extrair"
 
+#. is 'help' command tranlated as well ('ajuda' if so)
 #: frontend/src/reports/query/QueryEditor.svelte:15
 msgid "...enter a BQL query. 'help' to list available commands."
-msgstr ""
+msgstr "...digite uma consulta BQL. 'help' para lista de comandos disponíveis."
 
 #: frontend/src/journal/JournalFilters.svelte:42
 msgid "Metadata"
-msgstr ""
+msgstr "Metadados"
 
 #: frontend/src/entry-forms/AddMetadataButton.svelte:18
 #: frontend/src/entry-forms/EntryMetadata.svelte:78
 msgid "Add metadata"
-msgstr ""
+msgstr "Adicionar metadados"
 
 #: frontend/src/entry-forms/Note.svelte:15
 #: frontend/src/modals/AddEntry.svelte:16
 msgid "Note"
-msgstr ""
+msgstr "Nota"
 
 #: frontend/src/modals/EntryContext.svelte:13
 msgid "Location"
-msgstr ""
+msgstr "Localização"
 
 #: frontend/src/modals/EntryContext.svelte:29
 msgid "Context"
-msgstr ""
+msgstr "Contexto"
 
 #: frontend/src/modals/EntryContext.svelte:35
 msgid "Balances before entry"
-msgstr ""
+msgstr "Saldos antes da transação"
 
 #: frontend/src/modals/EntryContext.svelte:55
 msgid "Balances after entry"
-msgstr ""
+msgstr "Saldos depois da transação"
 
 #: frontend/src/journal/JournalFilters.svelte:24
 msgid "Cleared transactions"
-msgstr ""
+msgstr "Transações pendentes"
 
 #: frontend/src/journal/JournalFilters.svelte:25
 msgid "Pending transactions"
-msgstr ""
+msgstr "Transações pendentes"
 
 #: frontend/src/journal/JournalFilters.svelte:26
 msgid "Other transactions"
-msgstr ""
+msgstr "Outras transações"
 
 #: frontend/src/journal/JournalFilters.svelte:33
 msgid "Documents with a #discovered tag"
-msgstr ""
+msgstr "Documentos com uma etiqueta (tag) #discovered"
 
 #: frontend/src/entry-forms/Transaction.svelte:126
 #: frontend/src/journal/JournalFilters.svelte:43
 msgid "Postings"
-msgstr ""
+msgstr "Lançamentos"
 
 #: frontend/src/modals/DocumentUpload.svelte:49
 msgid "Upload file(s)"
-msgstr ""
+msgstr "Upload de arquivo(s)"
 
 #: fava/templates/_overlays.html:10
 msgid "Documents folder"
-msgstr ""
+msgstr "Pasta de arquivos"
 
 #: frontend/src/modals/DocumentUpload.svelte:72
 #: frontend/src/reports/import/Import.svelte:189
@@ -440,239 +442,240 @@ msgstr ""
 
 #: frontend/src/reports/editor/EditorMenu.svelte:54
 msgid "Align Amounts"
-msgstr ""
+msgstr "Alinhar quantidades"
 
 #: frontend/src/reports/editor/EditorMenu.svelte:58
 msgid "Toggle Comment (selection)"
-msgstr ""
+msgstr "Alternar Comentários (seleção)"
 
 #: frontend/src/reports/editor/EditorMenu.svelte:62
 msgid "Open all folds"
-msgstr ""
+msgstr "Abrir todas as pastas"
 
 #: frontend/src/reports/editor/EditorMenu.svelte:66
 msgid "Close all folds"
-msgstr ""
+msgstr "Fechar todas as pastas"
 
 #: src/fava/templates/options.html:6
 msgid "Fava options"
-msgstr ""
+msgstr "Opções Fava"
 
 #: src/fava/templates/options.html:6
 msgid "help"
-msgstr ""
+msgstr "ajuda"
 
 #: src/fava/templates/options.html:23
 msgid "Beancount options"
-msgstr ""
+msgstr "Opções Beancount"
 
 #: frontend/src/reports/query/QueryEditor.svelte:27
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: frontend/src/tree-table/AccountCellHeader.svelte:12
 msgid "Hold Shift while clicking to expand all children.\n"
 "Hold Ctrl or Cmd while clicking to expand one level."
-msgstr ""
+msgstr "Segure Shift ao clicar para expandir todos os filhos.\n"
+"Segure Ctol ou Cmd ao clicar para expandir um nível."
 
 #: frontend/src/modals/Export.svelte:14
 msgid "Export"
-msgstr ""
+msgstr "Exportar"
 
 #: frontend/src/sidebar/FilterForm.svelte:84
 msgid "Filter by tag, payee, ..."
-msgstr ""
+msgstr "Filtrar por etiqueta, recebedor, ..."
 
 #: frontend/src/modals/Export.svelte:16
 msgid "Download currently filtered entries as a Beancount file"
-msgstr ""
+msgstr "Baixar transações do filtro atual como um arquivo Beancount"
 
 #: fava/templates/extract.html:40
 msgid "Import entries"
-msgstr ""
+msgstr "Importar transações"
 
 #: frontend/src/lib/interval.ts:25 src/fava/util/date.py:102
 msgid "Yearly"
-msgstr ""
+msgstr "Anual"
 
 #: frontend/src/lib/interval.ts:26 src/fava/util/date.py:103
 msgid "Quarterly"
-msgstr ""
+msgstr "Trimestral"
 
 #: frontend/src/lib/interval.ts:27 src/fava/util/date.py:104
 msgid "Monthly"
-msgstr ""
+msgstr "Mensal"
 
 #: frontend/src/lib/interval.ts:28 src/fava/util/date.py:105
 msgid "Weekly"
-msgstr ""
+msgstr "Semanal"
 
 #: frontend/src/lib/interval.ts:29 src/fava/util/date.py:106
 msgid "Daily"
-msgstr ""
+msgstr "Diário"
 
 #: frontend/src/reports/editor/EditorMenu.svelte:52
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: frontend/src/entry-forms/Posting.svelte:76
 msgid "Amount"
-msgstr ""
+msgstr "Quantidade"
 
 #: frontend/src/journal/JournalFilters.svelte:37
 msgid "Documents with a #linked tag"
-msgstr ""
+msgstr "Documentos com uma etiqueta #linked"
 
 #: fava/static/javascript/modals/DocumentUpload.svelte:54
 msgid "You need to set the \"documents\" Beancount option for file uploads."
-msgstr ""
+msgstr "Você precisa configurar a opção Beancount \"documents\" para upload de arquivos."
 
 #: frontend/src/charts/ConversionAndInterval.svelte:12
 msgid "At Cost"
-msgstr ""
+msgstr "A Custo"
 
 #: frontend/src/charts/ConversionAndInterval.svelte:14
 msgid "At Market Value"
-msgstr ""
+msgstr "A Valor de Mercado"
 
 #: frontend/src/charts/ConversionAndInterval.svelte:16
 msgid "Units"
-msgstr ""
+msgstr "Unidades"
 
 #: frontend/src/stores/chart.ts:28
 msgid "Treemap"
-msgstr ""
+msgstr "Mapa de Árvore"
 
 #: frontend/src/stores/chart.ts:29
 msgid "Sunburst"
-msgstr ""
+msgstr "Explosão Solar"
 
 #: frontend/src/entry-forms/AccountInput.svelte:20
 msgid "Should be one of the declared accounts"
-msgstr ""
+msgstr "Deve ser uma das contas declaradas"
 
 #: src/fava/templates/events.html:7
 msgid "Event"
-msgstr ""
+msgstr "Evento"
 
 #: frontend/src/charts/ChartSwitcher.svelte:21
 #: frontend/src/reports/import/Extract.svelte:79
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: frontend/src/charts/ChartSwitcher.svelte:28
 #: frontend/src/reports/import/Extract.svelte:84
 msgid "Next"
-msgstr ""
+msgstr "Próximo"
 
 #: frontend/src/modals/AddEntry.svelte:14
 msgid "Transaction"
-msgstr ""
+msgstr "Transação"
 
 #: frontend/src/modals/AddEntry.svelte:40
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #: frontend/src/reports/documents/Documents.svelte:64
 msgid "Move or rename document"
-msgstr ""
+msgstr "Mover ou renomear documento"
 
 #: frontend/src/reports/documents/Table.svelte:24
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #: frontend/src/reports/documents/index.ts:16
 #: frontend/src/sidebar/AsideContents.svelte:46
 msgid "Documents"
-msgstr ""
+msgstr "Documentos"
 
 #: frontend/src/editor/DeleteButton.svelte:7
 #: frontend/src/editor/DeleteButton.svelte:10
 #: frontend/src/reports/import/FileList.svelte:29
 msgid "Delete"
-msgstr ""
+msgstr "Excluir"
 
 #: frontend/src/import/Import.svelte:106
 msgid "No importer matched this file."
-msgstr ""
+msgstr "Nenhum importador corresponde a este arquivo."
 
 #: frontend/src/stores/chart.ts:39
 msgid "Line chart"
-msgstr ""
+msgstr "Gráfico de linha"
 
 #: frontend/src/stores/chart.ts:40
 msgid "Area chart"
-msgstr ""
+msgstr "Gráfico de área"
 
 #: frontend/src/reports/import/FileList.svelte:52
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: frontend/src/reports/import/FileList.svelte:63
 msgid "Clear"
-msgstr ""
+msgstr "Limpar"
 
 #: frontend/src/sidebar/AccountSelector.svelte:22
 msgid "Go to account"
-msgstr ""
+msgstr "Ir para conta"
 
 #: frontend/src/reports/import/Import.svelte:78
 msgid "Delete this file?"
-msgstr ""
+msgstr "Excluir este arquivo?"
 
 #: frontend/src/reports/import/Import.svelte:156
 msgid "No files were found for import."
-msgstr ""
+msgstr "Nenhum arquivo para importação foi encontrado."
 
 #: frontend/src/journal/JournalFilters.svelte:7
 msgid "Toggle %(type)s entries"
-msgstr ""
+msgstr "Alternar transações %(type)s"
 
 #: frontend/src/charts/ConversionAndInterval.svelte:18
 msgid "Converted to %(currency)s"
-msgstr ""
+msgstr "Converter para %(currency)s"
 
 #: frontend/src/stores/chart.ts:50
 msgid "Stacked Bars"
-msgstr ""
+msgstr "Colunas Empilhadas"
 
 #: frontend/src/stores/chart.ts:51
 msgid "Single Bars"
-msgstr ""
+msgstr "Colunas Simples"
 
 #: frontend/src/charts/HierarchyContainer.svelte:32
 msgid "Chart is empty."
-msgstr ""
+msgstr "Gráfico está vazio."
 
 #: frontend/src/journal/JournalFilters.svelte:42
 msgid "Toggle metadata"
-msgstr ""
+msgstr "Alternar metadados"
 
 #: frontend/src/journal/JournalFilters.svelte:43
 msgid "Toggle postings"
-msgstr ""
+msgstr "Alternar lançamentos"
 
 #: src/fava/internal_api.py:221
 msgid "Net Worth"
-msgstr ""
+msgstr "Patrimônio Líquido"
 
 #: src/fava/internal_api.py:170
 msgid "Account Balance"
-msgstr ""
+msgstr "Saldo da Conta"
 
 #: frontend/src/editor/SliceEditor.svelte:91
 msgid "reload"
-msgstr ""
+msgstr "recarregar"
 
 #: frontend/src/modals/AddEntry.svelte:60
 msgid "continue"
-msgstr ""
+msgstr "continuar"
 
 #: src/fava/templates/_journal_table.html:50
 msgid "Payee/Narration"
-msgstr ""
+msgstr "Recebedor/Descrição"
 
 #: frontend/src/editor/DeleteButton.svelte:7
 msgid "Deleting..."
-msgstr ""
+msgstr "Excluindo"
 
