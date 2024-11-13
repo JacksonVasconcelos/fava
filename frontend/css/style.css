@@ -1,17 +1,40 @@
 :root {
+
+  /* Nord colors */
+  /* https://www.nordtheme.com/ */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
   /* Fonts */
   --font-family: "Fira Sans", sans-serif;
+  --font-family-alternative: "Source Serif Pro", sans-serif;
   --font-family-monospaced: "Fira Mono", monospace;
   --font-family-editor: "Source Code Pro", monospace;
 
   /* Scale of z-index values */
-  --z-index-floating-ui: 1;
-  --z-index-autocomplete: 2;
-  --z-index-overlay: 3;
-  --z-index-keyboard-overlays: 4;
+  --z-index-aside: 1;
+  --z-index-header: 2;
+  --z-index-floating-ui: 3;
+  --z-index-keyboard-overlays: 10;
+  --z-index-autocomplete: 8;
+  --z-index-overlay: 4;
 
   /* Base colors */
-  --error: hsl(0deg 100% 30%);
+  --error: var(--nord11);
   --warning: hsl(52deg 84% 56%);
   --red: var(--error);
   --yellow: var(--warning);
@@ -19,35 +42,29 @@
   --gray: #aaa;
   --transparent-black: hsl(0deg 0% 0% / 50%);
   --transparent-white: hsl(0deg 0% 100% / 50%);
-  --background: #fff;
-  --background-darker: hsl(0deg 0% 85%);
-  --text-color: hsl(0deg 0% 27%);
-  --text-color-lighter: hsl(0deg 0% 33%);
-  --text-color-lightest: hsl(0deg 0% 47%);
-  --link-color: hsl(203deg 100% 32%);
-  --link-hover-color: hsl(0deg 0% 33%);
-  --heading-color: #333;
-  --code-background: hsl(0deg 0% 97%);
-  --border: hsl(0deg 0% 85%);
-  --border-darker: hsl(0deg 0% 80%);
-
-  /* Box shadows */
-  --box-shadow-button: 0 0 5px hsl(0deg 0% 50% / 50%);
-  --box-shadow-dropdown: 3px 3px 3px hsl(0deg 0% 50% / 50%);
-  --box-shadow-kbd: inset 0 -1px 0 var(--border-darker);
-  --box-shadow-overlay: 0 0 20px var(--overlay-wrapper-background);
+  --background: var(--nord0);
+  --background-darker: var(--nord1);
+  --text-color: var(--nord4);
+  --text-color-lighter: var(--nord5);
+  --text-color-lightest: var(--nord6);
+  --link-color: var(--nord9);
+  --link-hover-color: var(--nord5);
+  --heading-color: var(--nord4);
+  --code-background: var(--nord1);
+  --border: var(--nord7);
+  --border-darker: var(--nord8);
 
   /* Buttons */
-  --button-color: #fff;
-  --button-background: hsl(203deg 100% 32%);
+  --button-color: var(--nord4);
+  --button-background: var(--nord1);
   --button-muted-color: var(--text-color);
   --button-muted-background: var(--background-darker);
 
   /* Sidebar */
-  --sidebar-color: #444;
+  --sidebar-color: var(--nord4);
   --sidebar-hover-color: var(--link-color);
-  --sidebar-background: hsl(0deg 0% 96%);
-  --sidebar-border: hsl(0deg 0% 87%);
+  --sidebar-background: var(--nord0);
+  --sidebar-border: var(--nord1);
 
   /* Details */
   --summary-background: hsl(0deg 0% 95%);
@@ -55,43 +72,43 @@
 
   /* Header */
   --header-color: #fff;
-  --header-background: hsl(203deg 100% 32%);
-  --header-placeholder-color: hsl(203deg 47% 66%);
-  --header-placeholder-background: hsl(203deg 56% 45%);
+  --header-background: var(--nord1);
+  --header-placeholder-color: var(--nord5);
+  --header-placeholder-background: var(--nord3);
 
   /* Tables */
-  --table-header-text: hsl(0deg 0% 40%);
-  --table-header-background: hsl(0deg 0% 90%);
-  --table-border: hsl(0deg 0% 90%);
-  --table-background-even: hsl(0deg 0% 95%);
-  --treetable-expander: #afc1d3;
+  --table-header-text: var(--nord4);
+  --table-header-background: var(--nord1);
+  --table-border: var(--nord1);
+  --table-background-even: var(--nord2);
+  --treetable-expander: #var(--nord4);
   --budget-negative: #af3d3d;
   --budget-positive: #3daf46;
 
   /* Editor */
   --editor-comment: #998;
+  --editor-trailing-whitespace: rgb(255 199 199 / 50%);
   --editor-directive: #333;
   --editor-class: #b84;
   --editor-date: #099;
   --editor-constant: #008080;
   --editor-account: var(--link-color);
   --editor-invalid: #333;
-  --editor-invalid-background: rgb(255 199 199 / 50%);
   --editor-activeline: #ffc;
 
   /* Misc */
   --notification-color: #fff;
   --chart-axis: #999;
   --autocomplete-match: #ffd27c;
-  --mobile-button-text: #000;
+  --mobile-button-text: var(--nord4);
   --placeholder-color: var(--text-color-lightest);
   --placeholder-background: var(--background);
   --dragover-background: hsl(203deg 100% 32% / 50%);
   --overlay-wrapper-background: rgb(0 0 0 / 50%);
 
   /* Help pages */
-  --help-sidebar-background: #f8f8f8;
-  --help-sidebar-border: #eaeaea;
+  --help-sidebar-background: var(--nord1);
+  --help-sidebar-border: var(--nord1);
 }
 
 .journal .balance {
